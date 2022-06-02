@@ -10,7 +10,7 @@ const Tabs = () => (
     </li>
     <li className="nav-item">
       <Link to="/issues" className="nav-link mb-0">
-        issues
+        Issues
       </Link>
     </li>
     <li className="nav-item">

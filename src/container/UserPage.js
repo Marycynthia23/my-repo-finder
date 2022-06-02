@@ -5,7 +5,7 @@ import axios from "axios";
 import Charts from "../components/Charts/Charts";
 import Footer from "../components/Footer/Footer";
 import "./UserPage.css";
-import Issues from "../components/Issues/Issues";
+// import Issues from "../components/Issues/Issues";
 
 function UserPage() {
   const [input, setInput] = useState("bootstrap");
@@ -26,7 +26,7 @@ function UserPage() {
 
   useEffect(() => {
     getData();
-  }, []);
+  });
 
   const handleChange = (event) => {
     // event.preventDefault();
@@ -66,12 +66,8 @@ function UserPage() {
                   <span>{item.forks_count}</span>
                 </div>
                 <div className="subitem">
-                  <i className="far fa-copy pr-1"></i>
-                  <span>{item.owner.url}</span>
-                </div>
-                <div className="subitem">
                   <i className="fal fa-dot-circle pr-1"></i>
-                  <span>{item.open_issues_count}</span>
+                  <span>{item.open_issues_count} issues</span>
                 </div>
               </div>
             </div>
@@ -80,10 +76,6 @@ function UserPage() {
         </section>
       ))}
       <section>
-        <h4> Issues</h4>
-        <Issues />
-      </section>
-      <section className="">
         <Charts />
       </section>
       <Footer />
