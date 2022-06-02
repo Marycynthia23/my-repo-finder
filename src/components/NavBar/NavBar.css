@@ -1,0 +1,54 @@
+.avatar {
+  border-radius: 50%;
+  /* object-fit: cover; */
+}
+.form_control {
+  width: 20%;
+  background-color: #fff;
+}
+.btnCont {
+  border-radius: 35px;
+  border-style: dashed;
+  border-color: #3861fb;
+  background: #060028;
+  color: #fff;
+  padding: 8px 10px;
+}
+form.btnCont input[type="text"] {
+  padding: 10px;
+  border: none;
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  width: 60%;
+  background: #060028;
+  border: none;
+}
+
+form.btnCont button {
+  width: 40%;
+  padding: 10px;
+  background: #3861fb;
+  border-radius: 25px;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+form.btnCont button:hover {
+  background: #0b7dda;
+}
+
+form.btnCont::after {
+  content: "";
+  display: table;
+  border-radius: 5px;
+}
